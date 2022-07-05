@@ -2,7 +2,7 @@ template: true   # required for local templates
 valuesFilePath: ./values.yml
 
 resources:
-  - name: myFirstRepo
+  - name: JavaRepo
     type: GitRepo
     configuration:
       # SCM integration where the repository is located
@@ -24,7 +24,7 @@ pipelines:
           configFileLocation: .
           configFileName: mvn-art-config
           inputResources:
-            - name: myFirstRepo
+            - name: JavaRepo
           integrations:
             - name: demoArt
           runtime:
