@@ -21,8 +21,6 @@ pipelines:
         configuration:
           sourceLocation: .
           mvnCommand: clean install -ntp
-          configFileLocation: .
-          configFileName: mvn-art-config
           inputResources:
             - name: JavaRepo
           integrations:
