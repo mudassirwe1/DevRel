@@ -19,7 +19,7 @@ pipelines:
       - name: bld_backend
         type: MvnBuild
         configuration:
-          sourceLocation: .
+          sourceLocation: Maven_Challenge/
           mvnCommand: clean install -ntp
           inputResources:
             - name: JavaRepo
